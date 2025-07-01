@@ -34,15 +34,15 @@ public class LoginForm extends JFrame{
 
                 if (cbox_index > -1) {
                     if (selected.equals("Admin")) {
-                        if (validateCredentials(userInput, pasInput, selected) {
+                        if (validateCredentials(userInput, pasInput, selected)) {
                             new AdminForm();
                             dispose();
                         } else {
                             JOptionPane.showMessageDialog(null, "Credenciales incorrectas.");
                         }
 
-                    } else if (selected.equals("Admin") {
-                        if (validateCredentials(userInput, pasInput, selected) {
+                    } else if (selected.equals("Admin")) {
+                        if (validateCredentials(userInput, pasInput, selected)) {
                             new PlayerForm();
                             dispose();
                         } else {
